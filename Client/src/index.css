@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-size: 18px;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    
+}
+
+.ActiveMenu {
+    clip-path: polygon(93% 0%, 100% 50%, 93% 100%, 0% 100%, 0 50%, 0% 0%);
+    
+}
+
+.borderAnimateLi{
+    margin-bottom: 10px;
+}
+
+.borderAnimate{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.borderAnimate-D{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.borderAnimate::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.borderAnimate-D::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(58, 57, 57);
+}
+
+
+.borderAnimate:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.borderAnimate-D:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.borderAnimateOnly{
+    text-decoration: none;
+    color: white;
+}
+
+.borderAnimateOnly::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.borderAnimateOnly:hover::after{
+    width: 30%;
+    transition: width .3s;
+}
+
+.bg-Primary{
+    background-image: linear-gradient(to right, rgb(139 92 246) ,rgb(243, 31, 243));
+    cursor: pointer;
+}
+
+.bg-Primary-Text{
+    background: linear-gradient(to right, rgb(139, 92, 246), rgb(243, 31, 243));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.bg-Primary-Text-Hover{
+    background: linear-gradient(to right, rgb(139, 92, 246), rgb(243, 31, 243));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+.bg-Primary-Text-Hover:hover{
+    background-image: linear-gradient(to right, rgb(122, 78, 224) ,rgb(211, 36, 211));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.bg-Primary:hover{
+    background-image: linear-gradient(to right, rgb(122, 78, 224) ,rgb(211, 36, 211));
+}
+
+.bg-Primary-wh{
+    background-image: linear-gradient(to right, rgb(139 92 246) ,rgb(243, 31, 243));
+}
+
+.bg-Transparent-Gray{
+    background-color: rgba(245, 245, 245, 0.822);
+}
+
+.bg-Primary-D{
+    background-image: linear-gradient(to right, yellow ,rgb(92, 204, 0));
+    cursor: pointer;
+}
+
+.bg-Primary-D-Text{
+    background-image: linear-gradient(to right, yellow ,rgb(92, 204, 0));    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.bg-Primary-D:hover{
+    background-image: linear-gradient(to right, yellow ,rgb(92, 204, 0));}
+
+.bg-Primary-D-wh{
+    background-image: linear-gradient(to right, yellow ,rgb(92, 204, 0));}
+
+.bg-Transparent-Gray{
+    background-image: linear-gradient(to right, rgb(236, 234, 100) ,rgb(247, 157, 55))}
+
+
+.Dropdown-Items{
+    display: none;
+    
+  
+}
+
+
+
+.Dropdown:hover .Dropdown-Items{
+    display: flex;
+   
+}   
